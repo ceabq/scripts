@@ -1,0 +1,12 @@
+[Unit]
+Description=Unit describution
+After=network-online.target
+Wants=network-online.target
+[Service]
+WorkingDirectory=/root
+ExecStart=
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
